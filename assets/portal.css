@@ -23,3 +23,4 @@
 .candle-stage .candle{top:38px}.candle-stage:before{top:58%}@media(max-width:580px){.candle-stage .candle{top:30px}.candle-stage:before{top:57%}}
 .candle-text{top:58px;font-family:Georgia,"Times New Roman",serif;font-size:3.2rem;line-height:1;color:#a77d21;text-shadow:0 1px #fff7d5,0 3px 7px rgba(90,57,10,.2)}.candle.lit .candle-text{color:#b67e13;text-shadow:0 1px #fff7d5,0 0 12px rgba(255,174,27,.35)}
 .video:not(.youtube-live):after{display:none}
+.celebration-contacts{display:grid;grid-template-columns:1fr 1.25fr;gap:12px}.celebration-contacts a{display:flex;flex-direction:column;justify-content:center;min-height:72px;padding:12px;border:1px solid var(--line);border-radius:9px;text-decoration:none}.celebration-contacts strong{color:var(--navy);font-size:.85rem}.celebration-contacts span{color:var(--muted);white-space:nowrap}@media(max-width:580px){.celebration-contacts{grid-template-columns:1fr}}
