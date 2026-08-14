@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Administração | Santuário do Bonfim</title>
+  <link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="admin-body">
+  <main class="admin-shell">
+    <section class="admin-login" id="adminLogin">
+      <img src="assets/logo-santuario.svg" alt="Santuário Senhor do Bonfim">
+      <p class="kicker">Área reservada</p>
+      <h1>Painel administrativo</h1>
+      <p>Informe a chave administrativa para consultar cadastros, intenções e enviar imagens.</p>
+      <form id="adminLoginForm" class="form">
+        <div class="field"><label for="adminToken">Chave de acesso</label><input id="adminToken" type="password" autocomplete="current-password" required></div>
+        <button class="btn btn-orange" type="submit">Entrar com segurança</button>
+        <p class="admin-message" id="loginMessage" role="status"></p>
+      </form>
+    </section>
+    <section class="admin-dashboard" id="adminDashboard" hidden>
+      <header class="admin-topbar"><div><p class="kicker">Santuário do Bonfim</p><h1>Painel administrativo</h1></div><button class="btn btn-outline" id="adminLogout" type="button">Sair</button></header>
+      <div class="admin-summary"><article><strong id="subscriberCount">0</strong><span>E-mails cadastrados</span></article><article><strong id="prayerCount">0</strong><span>Pedidos de oração</span></article><article><strong id="imageCount">0</strong><span>Imagens armazenadas</span></article></div>
+      <section class="admin-panel"><h2>Enviar imagem</h2><form id="imageUploadForm" class="admin-upload"><div class="field"><label for="imageTitle">Título</label><input id="imageTitle" name="title" required maxlength="160"></div><div class="field"><label for="imageAlt">Descrição acessível</label><input id="imageAlt" name="alt" required maxlength="300" placeholder="Descreva o conteúdo da fotografia"></div><div class="field"><label for="imageFile">Arquivo de imagem, até 8 MB</label><input id="imageFile" name="file" type="file" accept="image/jpeg,image/png,image/webp,image/avif" required></div><button class="btn btn-orange" type="submit">Enviar imagem</button><p class="admin-message" id="uploadMessage" role="status"></p></form><div class="admin-images" id="adminImages"></div></section>
+      <section class="admin-panel"><h2>Pedidos de oração</h2><div class="admin-table-wrap"><table><thead><tr><th>Data</th><th>Nome</th><th>Intenção</th><th>Status</th></tr></thead><tbody id="prayerRows"></tbody></table></div></section>
+      <section class="admin-panel"><h2>Lista de e-mails</h2><div class="admin-table-wrap"><table><thead><tr><th>Data</th><th>E-mail</th><th>Status</th></tr></thead><tbody id="subscriberRows"></tbody></table></div></section>
+    </section>
+  </main>
+  <script src="assets/admin.js"></script>
+</body>
+</html>
