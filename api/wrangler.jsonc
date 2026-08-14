@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "santuario-bonfim-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-14",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    "ALLOWED_ORIGINS": "https://brunoalvestech.github.io,http://127.0.0.1:8765,http://localhost:8765"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "santuario-bonfim-db",
+      "database_id": "5807c4df-0e82-4bd8-b3f6-4670e34dd306",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "IMAGES",
+      "bucket_name": "santuario-bonfim-images"
+    }
+  ]
+}
