@@ -22,3 +22,4 @@
 .candle-stage{display:grid;place-items:center;padding:48px}.candle-stage .candle{margin:0 auto}.candle-stage:before{left:50%;top:50%;transform:translate(-50%,-50%) scale(.7)}.candle-stage:has(.candle.lit):before{transform:translate(-50%,-50%) scale(1)}@keyframes haloBreath{0%,100%{opacity:1;transform:translate(-50%,-50%) scale(1)}50%{opacity:.72;transform:translate(-50%,-50%) scale(1.08)}}@media(max-width:580px){.candle-stage{padding:38px 20px}}
 .candle-stage .candle{top:38px}.candle-stage:before{top:58%}@media(max-width:580px){.candle-stage .candle{top:30px}.candle-stage:before{top:57%}}
 .candle-text{top:58px;font-family:Georgia,"Times New Roman",serif;font-size:3.2rem;line-height:1;color:#a77d21;text-shadow:0 1px #fff7d5,0 3px 7px rgba(90,57,10,.2)}.candle.lit .candle-text{color:#b67e13;text-shadow:0 1px #fff7d5,0 0 12px rgba(255,174,27,.35)}
+.video:not(.youtube-live):after{display:none}
