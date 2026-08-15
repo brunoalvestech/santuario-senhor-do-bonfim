@@ -63,3 +63,20 @@
 .devotee-goals li:before{top:14px;color:#fff}
 @media(max-width:900px){.devotee-layout{grid-template-columns:1fr;gap:34px}.devotee-goals{max-width:680px}}
 @media(max-width:580px){.devotee-heading{align-items:flex-start;gap:14px}.devotee-emblem{width:50px;height:50px;flex-basis:50px}.devotee-copy h2{font-size:2rem}.devotee-goals{padding:26px 22px}.devotee-contact{align-items:flex-start;flex-direction:column}.devotee-contact span{margin-bottom:2px}}
+
+/* Marcos historicos */
+.milestones-section{position:relative;background:#f7f4ee;overflow:hidden}
+.milestones-section:after{content:"";position:absolute;right:120px;top:-150px;width:360px;height:360px;border:1px solid rgba(246,154,0,.18);border-radius:50%;box-shadow:0 0 0 55px rgba(246,154,0,.04),0 0 0 110px rgba(0,28,77,.025);pointer-events:none}
+.milestones-heading{position:relative;z-index:1;max-width:710px;margin-bottom:34px}
+.milestones-heading .kicker{margin-bottom:7px;font-size:.9rem;text-transform:uppercase;letter-spacing:.1em}
+.milestones-heading h2{margin:0 0 10px;color:var(--navy);font-size:clamp(2rem,3.2vw,3rem);font-weight:400;line-height:1.12;letter-spacing:-.025em}
+.milestones-heading>p:last-child{margin:0;color:var(--muted);font-size:1.05rem}
+.milestones-section .stats{position:relative;z-index:1;gap:18px;border:0;background:transparent}
+.milestones-section .stat{position:relative;min-height:210px;padding:32px;text-align:left;border:1px solid #e1ddd4;border-radius:14px;background:#fff;box-shadow:0 12px 35px rgba(0,28,77,.07);overflow:hidden;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.milestones-section .stat:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--orange)}
+.milestones-section .stat:hover{transform:translateY(-5px);border-color:rgba(246,154,0,.6);box-shadow:0 18px 42px rgba(0,28,77,.12)}
+.milestones-section .stat-order{position:absolute;right:22px;top:17px;color:#d8dde5;font-size:.78rem;font-weight:800;letter-spacing:.12em}
+.milestones-section .stat strong{margin-bottom:13px;color:var(--navy);font-size:clamp(3.2rem,5vw,4.7rem);font-weight:400;line-height:1;letter-spacing:-.055em}
+.milestones-section .stat>span:last-child{color:#566170;font-size:1rem;line-height:1.5}
+@media(max-width:900px){.milestones-section .stats{grid-template-columns:1fr 1fr}.milestones-section .stat:last-child{grid-column:1/-1}}
+@media(max-width:580px){.milestones-heading{margin-bottom:26px}.milestones-section .stats{grid-template-columns:1fr}.milestones-section .stat,.milestones-section .stat:last-child{grid-column:auto;min-height:175px;padding:27px}.milestones-section .stat strong{font-size:3.6rem}}
