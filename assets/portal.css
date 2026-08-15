@@ -127,3 +127,21 @@
 .footer-contacts a{font-weight:400;color:#9dafc4}
 @media(max-width:900px){.footer-grid-minimal{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-grid-minimal .footer-logo{width:150px}.footer-brand p{display:none}.footer-fine{grid-template-columns:1fr auto}.developer-credit{grid-column:1/-1}}
 @media(max-width:580px){.footer{padding-top:30px}.footer-grid-minimal{grid-template-columns:1fr;gap:26px}.footer-brand{grid-column:auto}.footer-nav>div{max-width:280px}.footer-fine{display:flex;margin-top:22px;gap:9px}.footer-social{gap:8px 17px}}
+
+/* Ajustes finais do rodape */
+.footer-grid-minimal{grid-template-columns:.9fr .75fr 1.55fr}
+.footer-grid-minimal .footer-logo{width:220px}
+.footer-contact-row{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(150px,.65fr);gap:10px}
+.footer-contact-row>a{display:flex!important;align-items:center;gap:10px;min-width:0;padding:10px 11px;border:1px solid #29415f;border-radius:8px;background:rgba(255,255,255,.025)}
+.footer-contact-row>a>i{flex:0 0 18px;color:var(--orange);font-size:.95rem;text-align:center}
+.footer-contact-row>a>span{min-width:0;color:#d3deea;font-size:.8rem;overflow-wrap:anywhere}.footer-contact-row small{display:block;margin-bottom:1px;color:#71869f;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em}
+.footer-social{gap:9px;margin-top:11px;padding-top:10px}.footer-social a{width:34px;height:34px;display:grid!important;place-items:center;border:1px solid #385370;border-radius:50%;color:#fff!important;font-size:1rem;transition:background .2s ease,border-color .2s ease,transform .2s ease}.footer-social a:hover{border-color:var(--orange);background:var(--orange);transform:translateY(-2px)}.footer-social a:after{display:none!important}
+.devotee-contact .devotee-whatsapp{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:700}.devotee-whatsapp i{color:#48cf72;font-size:1.1rem}
+@media(max-width:900px){.footer-grid-minimal .footer-logo{width:190px}.footer-contact-row{grid-template-columns:1fr}}
+@media(max-width:580px){.footer-grid-minimal .footer-logo{width:200px}.footer-contact-row{max-width:420px}}
+
+/* Orações oficiais em destaque */
+.prayer-section{background:linear-gradient(180deg,#fff 0%,#f7f4ee 100%)}
+.prayer-heading{max-width:760px;margin-bottom:34px}.prayer-heading .kicker{margin-bottom:7px;font-size:.9rem;text-transform:uppercase;letter-spacing:.09em}.prayer-heading h2{margin:0 0 10px;color:var(--navy);font-size:clamp(2.2rem,4vw,3.4rem);font-weight:400}.prayer-heading>p:last-child{margin:0;color:var(--muted);font-size:1.06rem}
+.prayer-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.prayer-card{position:relative;padding:34px;border:1px solid #ded9ce;border-radius:16px;background:#fff;box-shadow:0 14px 38px rgba(0,28,77,.07);overflow:hidden}.prayer-card-featured{border-top:5px solid var(--orange)}.prayer-symbol{position:absolute;right:26px;top:22px;color:#e5e9ef;font:400 3.5rem/1 Georgia,serif}.prayer-label{margin:0 0 8px;color:var(--orange);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.prayer-card h3{max-width:78%;margin:0 0 20px;color:var(--navy);font-size:1.5rem}.prayer-card blockquote{margin:0 0 18px;padding:4px 0 4px 20px;border-left:3px solid var(--orange);color:#334154;font:italic 1.07rem/1.7 Georgia,serif}.prayer-card>p:not(.prayer-label){color:#657080}.prayer-source{display:inline-flex;flex-direction:column;margin-top:8px;color:var(--navy);font-weight:800;text-decoration:none}.prayer-source span{margin-top:2px;color:#8290a1;font-size:.72rem;font-weight:400}.prayer-source:hover{color:var(--orange)}
+@media(max-width:760px){.prayer-grid{grid-template-columns:1fr}.prayer-card{padding:28px 24px}.prayer-card h3{font-size:1.35rem}}
