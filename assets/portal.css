@@ -83,3 +83,10 @@
 
 /* A nova marca do rodape ja possui versao propria para fundo escuro */
 .footer-logo{width:250px;height:auto;filter:none}
+
+/* Assinatura discreta do desenvolvedor */
+.footer-fine{display:flex;align-items:center;justify-content:space-between;gap:16px 28px}
+.developer-credit{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px;color:#8294ab;white-space:nowrap}
+.footer .developer-credit a{display:inline;margin:0;color:#aebdce;text-decoration:none}
+.footer .developer-credit a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.footer-fine{align-items:flex-start;flex-direction:column}.developer-credit{white-space:normal}}
