@@ -80,3 +80,6 @@
 .milestones-section .stat>span:last-child{color:#566170;font-size:1rem;line-height:1.5}
 @media(max-width:900px){.milestones-section .stats{grid-template-columns:1fr 1fr}.milestones-section .stat:last-child{grid-column:1/-1}}
 @media(max-width:580px){.milestones-heading{margin-bottom:26px}.milestones-section .stats{grid-template-columns:1fr}.milestones-section .stat,.milestones-section .stat:last-child{grid-column:auto;min-height:175px;padding:27px}.milestones-section .stat strong{font-size:3.6rem}}
+
+/* A nova marca do rodape ja possui versao propria para fundo escuro */
+.footer-logo{width:250px;height:auto;filter:none}
